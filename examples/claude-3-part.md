@@ -16,7 +16,7 @@ Claude feels less like a chat window and more like a collaborator that can hold 
 
 - **Mode:** 3-Part
 - **Style:** Black Ink + Soft Accent Color
-- **Scene A:** The canonical character opens a laptop and notices an update.
+- **Scene A:** The user's own IP character opens a laptop and notices an update.
 - **Scene B:** The character passes a tall stack of documents to a small assistant figure.
 - **Scene C:** Both sit side by side, working at one desk.
 - **Layout:** Three unequal, interleaved beats; one large sentence, two medium text blocks, no panels or numbered headings in the final image.
@@ -27,5 +27,5 @@ Claude feels less like a chat window and more like a collaborator that can hold 
 
 - One core idea: yes.
 - Total Chinese copy: under 90 characters after punctuation review.
-- Character consistency: compare every scene with `assets/ip-reference/canonical-ip.png`.
+- Character consistency: compare every scene with the IP reference supplied by the user; never use a repository demo image as the identity reference.
 - No cards, fixed columns, Western imagery, or model-generated Chinese text.

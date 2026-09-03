@@ -28,13 +28,23 @@
 
 ## 示例效果
 
-### 用户授权的 IP 母版
+> [!IMPORTANT]
+> 下方图片仅用于展示视觉风格、内容节奏和排版效果。示例人物不是项目的默认 IP；实际使用时，**必须上传并替换成你自己的 IP 参考图**，不要直接沿用或仿制示例人物。
 
-![Canonical IP](assets/ip-reference/canonical-ip.png)
-
-### 基于该 IP 的生成式角色效果图
-
-![Generated character study](assets/examples/generated-character-study.png)
+<table>
+  <tr>
+    <td width="50%" align="center"><strong>Denim Blue Line Art</strong></td>
+    <td width="50%" align="center"><strong>Black Ink</strong></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><a href="assets/examples/denim-blue-claude-demo.png"><img src="assets/examples/denim-blue-claude-demo.png" alt="Denim Blue Line Art 示例图，仅作效果展示" width="260"></a></td>
+    <td width="50%" align="center"><a href="assets/examples/black-ink-grok-demo.png"><img src="assets/examples/black-ink-grok-demo.png" alt="Black Ink 示例图，仅作效果展示" width="260"></a></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>仅作示范 · 请更换为自己的 IP</sub></td>
+    <td align="center"><sub>仅作示范 · 请更换为自己的 IP</sub></td>
+  </tr>
+</table>
 
 完整的 3-Part 页面策划示例见 [`examples/claude-3-part.md`](examples/claude-3-part.md)。仓库未收录讨论过程中使用的第三方排版或风格参考图。
 
@@ -70,7 +80,7 @@ git clone https://github.com/<your-account>/pixel-figure-illustration-skill.git 
 - 想生成的页数（可选）
 - 视觉风格（不指定时由 Agent 判断）
 - Part 模式（不指定时默认优先 3-Part）
-- 是否需要沿用自己的角色母版
+- 自己拥有或获授权使用的 IP 参考图（必需）
 
 Skill 会先建立逐页 Page Beat，再生成插画层，最后通过 HTML / SVG / Canvas 等方式准确排版中文。长中文不交给生图模型直接书写。
 
@@ -83,17 +93,17 @@ pixel-figure-illustration-skill/
 ├── LICENSE
 ├── .gitignore
 ├── assets/
-│   ├── ip-reference/
-│   │   └── canonical-ip.png
 │   └── examples/
-│       └── generated-character-study.png
+│       ├── denim-blue-claude-demo.png
+│       └── black-ink-grok-demo.png
 └── examples/
     └── claude-3-part.md
 ```
 
 ## 注意事项
 
-- `assets/ip-reference/canonical-ip.png` 是当前项目的唯一人物基准；换动作、表情和场景，不换人物。
+- 仓库不提供默认人物母版。开始生成前，使用者必须上传自己的 IP 参考图，并在同一任务中始终以该图为唯一人物基准。
+- `assets/examples/` 中的人物与图片仅用于展示风格和版式，不能被当作默认 IP、临摹对象或身份参考。
 - 默认输出 3:4（推荐 1242 × 1660 或等比例高清尺寸）。
 - 文字与插画共同构图，避免 PPT、知识卡片、固定左文右图、卡片分栏和模板化九宫格。
 - 一页最多两个主要场景，优先画人物正在做什么，而不是堆 icon。
@@ -102,7 +112,7 @@ pixel-figure-illustration-skill/
 
 ## English summary
 
-This Skill turns long-form content into 3:4 Xiaohongshu narrative illustrations with a consistent character IP, accurate layered Chinese typography, abundant white space, and flexible 2-Part, 3-Part, or 4-Part pacing. It supports two art directions: **Black Ink + Soft Accent Color** and **Denim Blue Line Art**. Read [`SKILL.md`](SKILL.md) for the complete operating rules.
+This Skill turns long-form content into 3:4 Xiaohongshu narrative illustrations with a consistent, user-provided character IP, accurate layered Chinese typography, abundant white space, and flexible 2-Part, 3-Part, or 4-Part pacing. It supports two art directions: **Black Ink + Soft Accent Color** and **Denim Blue Line Art**. The repository images are style and layout demos only: users must supply and use their own IP. Read [`SKILL.md`](SKILL.md) for the complete operating rules.
 
 ## License
 

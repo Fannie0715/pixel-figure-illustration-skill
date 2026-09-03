@@ -10,7 +10,7 @@ Create a sequence of hand-drawn narrative content images, not an infographic. Ea
 ## Non-negotiable rules
 
 1. One page communicates one core idea. Add a page instead of crowding or shrinking text.
-2. Use [assets/ip-reference/canonical-ip.png](assets/ip-reference/canonical-ip.png) as the canonical character reference. Change pose, expression, viewpoint, props, and scene; preserve the face, hair, silhouette, proportions, youthful hand-drawn feeling, and identifying details. Change the drawing treatment, not the person.
+2. Require the user to provide an IP reference image before generation. Treat that user-provided image—not any repository demo—as the sole canonical character reference. Change pose, expression, viewpoint, props, and scene; preserve the supplied character's face, hair, silhouette, proportions, and identifying details. If no IP image is available, pause and ask for one instead of adopting the demo character.
 3. Text and illustration form one asymmetrical composition. Reject PPT, knowledge-card, fixed left-text/right-image, equal columns, panels, UI cards, and decorative borders.
 4. Prefer actions, relationships, and real scenes over icons or literal diagrams. Use one main scene and at most one supporting scene.
 5. Keep a pure white background and roughly 35–50% breathing room.
@@ -68,12 +68,19 @@ Treat parts as narrative beats, never as equal rectangular panels. Beats may int
 
 Before rendering, provide or internally establish a page plan with: page beat, exact copy, part mode, character action, scene, text placement, and selected visual style. Final output should include editable layout source when the environment supports it, plus high-resolution PNG exports.
 
+## Demo asset policy
+
+- Files in `assets/examples/` demonstrate style, narrative pacing, and layout only.
+- Never use the person shown in a demo as the user's IP, canonical identity reference, or a character to imitate.
+- Replace the demo person with the user's own IP reference in every real use.
+- Use only IP images the user owns or is authorized to use.
+
 ## QA checklist
 
 Reject or revise a page when any answer is no:
 
 - Is the page faithful to the source and limited to one memorable idea?
-- Does the character still match the canonical IP in face, hair, silhouette, proportions, and identifying details?
+- Does the character match the user's supplied canonical IP—not the repository demo—in face, hair, silhouette, proportions, and identifying details?
 - Is the selected part count a narrative rhythm rather than a grid?
 - Is the copy within the selected range and below about 90 Chinese characters?
 - Is all Chinese text accurate, readable, and typeset outside the image-generation layer?
